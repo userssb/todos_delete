@@ -44,10 +44,9 @@ class SimpleTodos extends Component {
     todosList: initialTodosList,
   }
 
-  onDeleteTodo = id => {
+  deleteTodo = id => {
     const {todosList} = this.state
     const updatedList = todosList.filter(eachItem => eachItem.id !== id)
-
     this.setState({
       todosList: updatedList,
     })
@@ -65,7 +64,7 @@ class SimpleTodos extends Component {
               <TodoItem
                 items={each}
                 key={each.id}
-                deleteTodo={this.onDeleteTodo}
+                deleteTodo={this.deleteTodo}
               />
             ))}
           </ul>
