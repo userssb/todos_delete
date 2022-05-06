@@ -1,0 +1,23 @@
+.list-cont {
+  list-style-type: none;
+  display: flex;
+  padding: 5px;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
+.description {
+  font-family: Roboto;
+  font-size: 18px;
+}
+.delete-button {
+  background-color: #ffffff;
+  color: #ff0b37;
+  font-family: 'Roboto';
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #ff0b37;
+  margin-left: 16px;
+  outline: none;
+  cursor: pointer;
+}
